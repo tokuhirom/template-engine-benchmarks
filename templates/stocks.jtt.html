@@ -52,8 +52,8 @@ thead {
    </thead>
    <tbody>
 [% FOR item IN items %]
-    <tr class="[% ["odd", "even"][loop.getCount()%2] %]">
-     <td style="text-align: center">[% loop.getCount() + 1 %]</td>
+    <tr class="[% IF loop.count%2==0 %]odd[% ELSE %]even[% END %]">
+     <td style="text-align: center">[% loop.count %]</td>
      <td>
       <a href="/stocks/[% item.symbol %]">[% item.symbol %]</a>
      </td>
