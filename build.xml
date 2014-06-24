@@ -200,8 +200,8 @@
         </echo>
     </target>
 
-    <target name="selected" depends="header,stringbuilder,jtt,freemarker,velocity,rythm,jamon,httl,jmte,mustache"></target>
-    <target name="all" depends="header,stringbuilder,jtt,freemarker,velocity,rythm,jamon,httl,jmte,jangod,thymeleaf,mustache"></target>
+    <target name="selected" depends="header,rythm,stringbuilder,jamon,httl,jmte,jangod,thymeleaf,mustache,jtt,freemarker,velocity"></target>
+    <target name="all" depends="header,rythm,stringbuilder,jamon,httl,jmte,jangod,thymeleaf,mustache,jtt,freemarker,velocity"></target>
     
     <target name="help">
         <echo>
